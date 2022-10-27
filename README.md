@@ -6,8 +6,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Resource
 
-Source Learning : https://www.youtube.com/watch?v=NXd16HxHLA4&t=6171s
-Source Figma : https://freebieflux.com/download-travel-agency-free-landing-page-freebie-by-ar-shakir.html
+<p>Source Learning : https://youtu.be/NXd16HxHLA4</p>
+<p>Source Figma : https://freebieflux.com/download-travel-agency-free-landing-page-freebie-by-ar-shakir.html</p>
 
 ## Getting Started
 
