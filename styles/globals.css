@@ -10,7 +10,15 @@ body {
 svg.logo-style-1 .logo_svg__color-1 {
   @apply fill-black;
 }
-
 svg.logo-style-1 .logo_svg__color-2 {
   @apply fill-accent-1;
+}
+svg.decor-plus-style-1 .decor-plus-style-1_svg__color-1 {
+  @apply fill-accent-5;
+}
+svg.decor-plus-style-1 .decor-plus-style-1_svg__color-2 {
+  @apply fill-accent-6;
+}
+svg.decor-plus-style-1 .decor-plus-style-1_svg__gray {
+  @apply fill-gray-200;
 }/*# sourceMappingURL=globals.css.map */

@@ -15,7 +15,7 @@ export default function Document() {
           rel="stylesheet"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
         />
       </Head>
