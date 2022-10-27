@@ -1,12 +1,12 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
-import Logo from "assets/images/logo.svg";
+import Logo from 'assets/images/logo.svg';
 
 export default function Header() {
   return (
-    <header className="max-w-7xl mx-auto px-4">
-      <div className="flex justify-between items-center">
+    <header className="mx-auto max-w-7xl px-4">
+      <div className="flex items-center justify-between">
         <div className="w-28">
           <Logo className="logo-style-1" />
         </div>
@@ -44,15 +44,13 @@ export default function Header() {
             </li>
             <li>
               <Link href="/sign-up">
-                <a className="px-5 py-1 border border-gray-900 rounded-md mx-3 text-gray-800">
-                  Sign Up
-                </a>
+                <a className="mx-3 rounded-md border border-gray-900 px-5 py-1 text-gray-800">Sign Up</a>
               </Link>
             </li>
             <li>
-              <button className="px-9 text-gray-800 relative">
+              <button className="relative px-9 text-gray-800">
                 EN
-                <span className="absolute w-2 h-2 border-gray-800 border-b border-r transform rotate-45 translate-y-1/2 ml-2"></span>
+                <span className="absolute ml-2 h-2 w-2 translate-y-1/2 rotate-45 transform border-b border-r border-gray-800"></span>
               </button>
             </li>
           </ul>
