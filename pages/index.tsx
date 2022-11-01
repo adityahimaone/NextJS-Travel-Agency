@@ -149,6 +149,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </section>
+      {/* Top Destinations */}
       <section className="mb-28">
         <div className="relative mx-auto max-w-7xl px-4">
           <div className="mb-16 flex flex-col text-center">
@@ -213,6 +214,114 @@ const Home: NextPage = () => {
           </div>
         </div>
       </section>
+      {/*  */}
+      <div className="mb-28">
+        <div className="relative mx-auto max-w-7xl px-4">
+          <div className="flex space-x-4">
+            <div className="w-6/12 pl-6">
+              <div className="mb-16 flex flex-col text-left">
+                <h3 className="mb-2 text-lg uppercase text-gray-500">Easy in Fast</h3>
+                <h3 className="mb-8 font-serif text-5xl uppercase leading-snug text-gray-900">
+                  Book your next trip in 3 easy steps
+                </h3>
+              </div>
+              <ul className="flex flex-col gap-y-12">
+                <li className="item-center flex gap-x-5">
+                  <span className="flex h-12 w-12 flex-none items-center justify-center rounded-xl bg-accent-1">
+                    <span className="material-icons text-white">navigation</span>
+                  </span>
+                  <div className="flex flex-col leading-5">
+                    <h6 className="font-bold text-gray-900">Choose Destination</h6>
+                    <p className="font-thin text-gray-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.{' '}
+                    </p>
+                  </div>
+                </li>
+                <li className="item-center flex gap-x-5">
+                  <span className="flex h-12 w-12 flex-none items-center justify-center rounded-xl bg-accent-2">
+                    <span className="material-icons text-white">credit_card</span>
+                  </span>
+                  <div className="flex flex-col leading-5">
+                    <h6 className="font-bold text-gray-900">Make Payment</h6>
+                    <p className="font-thin text-gray-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.{' '}
+                    </p>
+                  </div>
+                </li>
+                <li className="item-center flex gap-x-5">
+                  <span className="flex h-12 w-12 flex-none items-center justify-center rounded-xl bg-accent-7">
+                    <span className="material-icons text-white">plane</span>
+                  </span>
+                  <div className="flex flex-col leading-5">
+                    <h6 className="font-bold text-gray-900">Reach Airport on Selected Date</h6>
+                    <p className="font-thin text-gray-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.{' '}
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="flex w-6/12 items-center justify-center">
+              <div className="relative w-[370px]">
+                <div className="absolute -top-10 -right-10 z-10 h-60 w-60 rounded-full bg-accent-7/40 blur-3xl"></div>
+                <div className="absolute bottom-16 right-0 z-30 w-[263px] translate-x-1/2 transform rounded-2xl bg-white p-4 pr-7 shadow-great">
+                  <div className="flex">
+                    <span className="mr-3 h-12 w-12 flex-none overflow-hidden rounded-full">
+                      <Image src="/images/destination-5.jpg" layout="responsive" width="100%" height="100%" />
+                    </span>
+                    <div className="mb-2 flex w-full flex-col">
+                      <span className="text-sm text-gray-500">Ongoing</span>
+                      <span className="mb-2 text-sm text-gray-900">Trip to Rome</span>
+                      <span className="mb-1 text-xs">
+                        <span className="mr-1 text-accent-6">40%</span>
+                        <span className="text-gray-900">Completed</span>
+                      </span>
+                      <span className="flex h-1 w-full rounded-full bg-gray-200">
+                        <span className="h-full w-20 rounded-full bg-accent-6" />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative z-20 rounded-xl bg-white px-4 pt-4 pb-5 shadow-great">
+                  <div className="relative mb-6 h-40 overflow-hidden rounded-3xl">
+                    <Image
+                      layout="fill"
+                      width="100%"
+                      height="100%"
+                      className="object-cover"
+                      src="/images/destination-4.jpg"
+                    />
+                  </div>
+                  <h6 className="mb-2 text-lg font-bold text-gray-900">Trip to Greece</h6>
+                  <div className="mb-4 flex text-gray-500">
+                    <h6>14-29 June</h6>
+                    <span className="mx-2">|</span>
+                    <h6>by Robbin joseph</h6>
+                  </div>
+                  <div className="mb-6 flex gap-x-3">
+                    <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-300 text-gray-600">
+                      <span className="material-icons text-base">spa</span>
+                    </span>
+                    <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-300 text-gray-600">
+                      <span className="material-icons text-base">map</span>
+                    </span>
+                    <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-300 text-gray-600">
+                      <span className="material-icons text-base">near_me</span>
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <div className="flex space-x-3 text-gray-500">
+                      <span className="material-icons text-base">apartment</span>
+                      <span>24 people going</span>
+                    </div>
+                    <span className="material-icons text-2xl text-accent-6">favorite_border</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

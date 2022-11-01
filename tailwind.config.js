@@ -14,6 +14,7 @@ module.exports = {
         'accent-4': '#D5AEE4',
         'accent-5': '#FF7152',
         'accent-6': '#6246E5',
+        'accent-7': '#006380',
       },
       boxShadow: {
         great:
