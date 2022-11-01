@@ -7,6 +7,7 @@ import Header from 'components/Header';
 import DecorHero from 'assets/images/decor-intersect-1.svg';
 import DecorTextUnderlineHero from 'assets/images/text-decor-hero.svg';
 import DecorPlus1 from 'assets/images/decor-plus-style-1.svg';
+import DecorSwirl1 from 'assets/images/decor-swirl-style-1.svg';
 
 const Home: NextPage = () => {
   return (
@@ -143,6 +144,70 @@ const Home: NextPage = () => {
                 <h5 className="mb-8 px-8 text-base font-medium text-gray-500">
                   We deliver outsourced aviation services for military customers
                 </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="mb-28">
+        <div className="relative mx-auto max-w-7xl px-4">
+          <div className="mb-16 flex flex-col text-center">
+            <h3 className="mb-2 text-lg uppercase text-gray-500">Top Selling</h3>
+            <h3 className="font-serif text-5xl uppercase leading-snug text-gray-900">Top Destinations</h3>
+          </div>
+          <div className="relative flex pr-10">
+            <div className="absolute bottom-10 right-0 h-[252px] w-[96px]">
+              <DecorSwirl1 className="stroke-gray-600" />
+            </div>
+            <div className="relative z-20 w-4/12 px-4">
+              <div className="flex flex-col rounded-3xl bg-white pb-10 shadow-great">
+                <div className="relative h-96 overflow-hidden rounded-tr-3xl rounded-tl-3xl">
+                  <Image layout="fill" className="object-cover object-top" src="/images/destination-2.jpg" />
+                </div>
+                <div className="text-gray-500">
+                  <div className="flex justify-between px-5 pt-7">
+                    <h6 className="text-lg">Rome, Italy</h6>
+                    <h6 className="text-lg">$5,42k</h6>
+                  </div>
+                  <div className="inline-flex items-center px-5 pt-4">
+                    <span className="material-icons mr-2 text-black">near_me</span>
+                    <span>10 Days Trip</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative z-20 w-4/12 px-4">
+              <div className="flex flex-col rounded-3xl bg-white pb-10 shadow-great">
+                <div className="relative h-96 overflow-hidden rounded-tr-3xl rounded-tl-3xl">
+                  <Image layout="fill" className="object-cover object-top" src="/images/destination-3.jpg" />
+                </div>
+                <div className="text-gray-500">
+                  <div className="flex justify-between px-5 pt-7">
+                    <h6 className="text-lg">London, UK</h6>
+                    <h6 className="text-lg">$4,2k</h6>
+                  </div>
+                  <div className="inline-flex items-center px-5 pt-4">
+                    <span className="material-icons mr-2 text-black">near_me</span>
+                    <span>12 Days Trip</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative z-20 w-4/12 px-4">
+              <div className="flex flex-col rounded-3xl bg-white pb-10 shadow-great">
+                <div className="relative h-96 overflow-hidden rounded-tr-3xl rounded-tl-3xl">
+                  <Image layout="fill" className="object-cover object-top" src="/images/destination-1.jpg" />
+                </div>
+                <div className="text-gray-500">
+                  <div className="flex justify-between px-5 pt-7">
+                    <h6 className="text-lg">Full Europe</h6>
+                    <h6 className="text-lg">$15k</h6>
+                  </div>
+                  <div className="inline-flex items-center px-5 pt-4">
+                    <span className="material-icons mr-2 text-black">near_me</span>
+                    <span>28 Days Trip</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
