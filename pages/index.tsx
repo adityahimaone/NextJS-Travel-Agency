@@ -15,11 +15,13 @@ const Home: NextPage = () => {
       <Head>
         <title>Travel Agency</title>
         <meta name="description" content="Travel Agency APP" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="absolute z-10 w-full py-12">
         <Header />
       </div>
+      {/* Section Hero */}
       <section className="relative mb-28">
         <span className="absolute right-0 top-0 bottom-0 h-screen w-5/12 ">
           <DecorHero className="fill-accent-3" />
@@ -36,7 +38,7 @@ const Home: NextPage = () => {
                   <span className="absolute top-full left-0 -z-10 -mt-8 -ml-4">
                     <DecorTextUnderlineHero className="h-[12px] w-[393px] fill-accent-2" />
                   </span>
-                </span>{' '}
+                </span>
                 and live a new and full life
               </h2>
               <p className="mb-8 max-w-lg leading-8 text-gray-500">
@@ -69,13 +71,14 @@ const Home: NextPage = () => {
                   layout="responsive"
                   width="100%"
                   height="100%"
-                  alt="traveller"
+                  alt="traveler"
                 />
               </div>
             </div>
           </div>
         </div>
       </section>
+      {/* Section Category */}
       <section className="mb-32">
         <div className="relative mx-auto max-w-7xl px-4">
           <div className="absolute -top-10 h-36 w-36 lg:-right-10">
@@ -91,7 +94,13 @@ const Home: NextPage = () => {
                 <div className="absolute bottom-12 left-12 -z-10 h-28 w-28 -translate-x-1/2 translate-y-1/2 transform rounded-tl-3xl rounded-br-lg bg-accent-2 opacity-0 transition-all duration-300 group-hover:left-6 group-hover:bottom-6 group-hover:opacity-100"></div>
                 <div className="relative mb-6 inline-flex h-28">
                   <div className="absolute -right-11 z-10 translate-y-1/2 -translate-x-1/2">
-                    <Image layout="fixed" width={60} height={60} src="/images/illustration-satellite.png" />
+                    <Image
+                      layout="fixed"
+                      width={60}
+                      height={60}
+                      src="/images/illustration-satellite.png"
+                      alt="satellite"
+                    />
                   </div>
                   <div className="absolute bottom-0 left-5 h-12 w-12 -translate-x-1/2 transform rounded-tl-lg rounded-tr-md rounded-br-[18px] rounded-bl-md bg-accent-3"></div>
                 </div>
@@ -106,7 +115,7 @@ const Home: NextPage = () => {
                 <div className="absolute bottom-12 left-12 -z-10 h-28 w-28 -translate-x-1/2 translate-y-1/2 transform rounded-tl-3xl rounded-br-lg bg-accent-2 opacity-0 transition-all duration-300 group-hover:left-6 group-hover:bottom-6 group-hover:opacity-100"></div>
                 <div className="relative mb-6 inline-flex h-28">
                   <div className="absolute z-10 -translate-x-1/2">
-                    <Image layout="fixed" width={146} height={133} src="/images/plane.png" />
+                    <Image layout="fixed" width={146} height={133} src="/images/plane.png" alt="plane" />
                   </div>
                   <div className="absolute bottom-10 -left-3 h-12 w-12 -translate-x-1/2 transform rounded-tl-md rounded-tr-lg rounded-br-md rounded-bl-[18px] bg-accent-3"></div>
                 </div>
@@ -121,7 +130,7 @@ const Home: NextPage = () => {
                 <div className="absolute bottom-12 left-12 -z-10 h-28 w-28 -translate-x-1/2 translate-y-1/2 transform rounded-tl-3xl rounded-br-lg bg-accent-2 opacity-0 transition-all duration-300 group-hover:left-6 group-hover:bottom-6 group-hover:opacity-100"></div>
                 <div className="relative mb-6 inline-flex h-28">
                   <div className="absolute -left-3 top-2 z-10 translate-y-1/2 -translate-x-1/2">
-                    <Image layout="fixed" width={40} height={69} src="/images/illustration-mic.png" />
+                    <Image layout="fixed" width={40} height={69} src="/images/illustration-mic.png" alt="microphone" />
                   </div>
                   <div className="absolute bottom-5 left-3 h-12 w-12 -translate-x-1/2 transform rounded-tl-md rounded-tr-[18px] rounded-br-md rounded-bl-lg bg-accent-3"></div>
                 </div>
@@ -136,7 +145,7 @@ const Home: NextPage = () => {
                 <div className="absolute bottom-12 left-12 -z-10 h-28 w-28 -translate-x-1/2 translate-y-1/2 transform rounded-tl-3xl rounded-br-lg bg-accent-2 opacity-0 transition-all duration-300 group-hover:left-6 group-hover:bottom-6 group-hover:opacity-100"></div>
                 <div className="relative mb-6 inline-flex h-28">
                   <div className="absolute -right-10 top-3 z-10 translate-y-1/2 -translate-x-1/2">
-                    <Image layout="fixed" width={50} height={50} src="/images/illustration-power.png" />
+                    <Image layout="fixed" width={50} height={50} src="/images/illustration-power.png" alt="gear" />
                   </div>
                   <div className="absolute bottom-0 left-5 h-12 w-12 -translate-x-1/2 transform rounded-tl-md rounded-tr-lg rounded-br-md rounded-bl-[18px] bg-accent-3"></div>
                 </div>
@@ -163,7 +172,7 @@ const Home: NextPage = () => {
             <div className="relative z-20 w-4/12 px-4">
               <div className="flex flex-col rounded-3xl bg-white pb-10 shadow-great">
                 <div className="relative h-96 overflow-hidden rounded-tr-3xl rounded-tl-3xl">
-                  <Image layout="fill" className="object-cover object-top" src="/images/destination-2.jpg" />
+                  <Image layout="fill" className="object-cover object-top" src="/images/destination-1.jpg" alt="Rome" />
                 </div>
                 <div className="text-gray-500">
                   <div className="flex justify-between px-5 pt-7">
@@ -180,7 +189,12 @@ const Home: NextPage = () => {
             <div className="relative z-20 w-4/12 px-4">
               <div className="flex flex-col rounded-3xl bg-white pb-10 shadow-great">
                 <div className="relative h-96 overflow-hidden rounded-tr-3xl rounded-tl-3xl">
-                  <Image layout="fill" className="object-cover object-top" src="/images/destination-3.jpg" />
+                  <Image
+                    layout="fill"
+                    className="object-cover object-top"
+                    src="/images/destination-2.jpg"
+                    alt="Big Bang"
+                  />
                 </div>
                 <div className="text-gray-500">
                   <div className="flex justify-between px-5 pt-7">
@@ -197,7 +211,12 @@ const Home: NextPage = () => {
             <div className="relative z-20 w-4/12 px-4">
               <div className="flex flex-col rounded-3xl bg-white pb-10 shadow-great">
                 <div className="relative h-96 overflow-hidden rounded-tr-3xl rounded-tl-3xl">
-                  <Image layout="fill" className="object-cover object-top" src="/images/destination-1.jpg" />
+                  <Image
+                    layout="fill"
+                    className="object-cover object-top"
+                    src="/images/destination-3.jpg"
+                    alt="europe"
+                  />
                 </div>
                 <div className="text-gray-500">
                   <div className="flex justify-between px-5 pt-7">
@@ -214,7 +233,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </section>
-      {/*  */}
+      {/* Section Easy in Fast */}
       <div className="mb-28">
         <div className="relative mx-auto max-w-7xl px-4">
           <div className="flex space-x-4">
@@ -267,7 +286,13 @@ const Home: NextPage = () => {
                 <div className="absolute bottom-16 right-0 z-30 w-[263px] translate-x-1/2 transform rounded-2xl bg-white p-4 pr-7 shadow-great">
                   <div className="flex">
                     <span className="mr-3 h-12 w-12 flex-none overflow-hidden rounded-full">
-                      <Image src="/images/destination-5.jpg" layout="responsive" width="100%" height="100%" />
+                      <Image
+                        src="/images/destination-5.jpg"
+                        layout="responsive"
+                        width="100%"
+                        height="100%"
+                        alt="city of greece"
+                      />
                     </span>
                     <div className="mb-2 flex w-full flex-col">
                       <span className="text-sm text-gray-500">Ongoing</span>
@@ -290,6 +315,7 @@ const Home: NextPage = () => {
                       height="100%"
                       className="object-cover"
                       src="/images/destination-4.jpg"
+                      alt="greece"
                     />
                   </div>
                   <h6 className="mb-2 text-lg font-bold text-gray-900">Trip to Greece</h6>
