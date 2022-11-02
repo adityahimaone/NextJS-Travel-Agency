@@ -8,6 +8,7 @@ import DecorHero from 'assets/images/decor-intersect-1.svg';
 import DecorTextUnderlineHero from 'assets/images/text-decor-hero.svg';
 import DecorPlus1 from 'assets/images/decor-plus-style-1.svg';
 import DecorSwirl1 from 'assets/images/decor-swirl-style-1.svg';
+import Testimonials from 'components/Testimonials';
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* Header */}
       <div className="absolute z-10 w-full py-12">
         <Header />
       </div>
@@ -158,7 +160,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </section>
-      {/* Top Destinations */}
+      {/* Top Destinations Section */}
       <section className="mb-28">
         <div className="relative mx-auto max-w-7xl px-4">
           <div className="mb-16 flex flex-col text-center">
@@ -348,6 +350,8 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
+      {/* Section Testimonial */}
+      <Testimonials />
     </div>
   );
 };
