@@ -11,22 +11,22 @@ const Items = [
     id: '1',
     desc: 'On the Windows talking pasture yet its express parties use. Sure last upon he same as knew next',
     image: 'user-1.jpg',
-    author: 'Mike taylor',
-    role: 'Lahore, Pakistan',
+    author: 'Susan Smith',
+    role: 'London, UK',
   },
   {
     id: '2',
     desc: 'On the Windows talking pasture yet its express parties use. Sure last upon he same as knew next',
     image: 'user-2.jpg',
-    author: 'Taylor Swift',
-    role: 'Lahore, Pakistan',
+    author: 'Robert Danuarta',
+    role: 'New York, USA',
   },
   {
     id: '3',
     desc: 'On the Windows talking pasture yet its express parties use. Sure last upon he same as knew next',
     image: 'user-3.jpg',
     author: 'Mia Khalifa',
-    role: 'Lahore, Pakistan',
+    role: 'Los Angeles, USA',
   },
 ];
 
@@ -107,6 +107,7 @@ export default function Testimonials() {
                               width="100%"
                               height="100%"
                               src={`/images/${item.image}`}
+                              alt={item.author}
                             />
                           </span>
                           <p className="mb-8 text-gray-500">{item.desc}</p>
