@@ -94,7 +94,7 @@ export default function Testimonials() {
                   // @ts-ignore
                   swiperRef.current = swiper;
                 }}
-              >
+              >  
                 {Items.map((item) => (
                   <SwiperSlide key={item.id}>
                     <div className="relative px-32 pt-20 pb-48">

@@ -4,11 +4,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import Header from 'components/Header';
+import Testimonials from 'components/Testimonials';
+
 import DecorHero from 'assets/images/decor-intersect-1.svg';
 import DecorTextUnderlineHero from 'assets/images/text-decor-hero.svg';
 import DecorPlus1 from 'assets/images/decor-plus-style-1.svg';
 import DecorSwirl1 from 'assets/images/decor-swirl-style-1.svg';
-import Testimonials from 'components/Testimonials';
+import DecorEllipse1 from 'assets/images/decor-ellipse-style-1.svg';
 
 const Home: NextPage = () => {
   const Clients = [
@@ -371,6 +373,47 @@ const Home: NextPage = () => {
                 <Image src={`/images/${item.image}`} alt={item.alt} className="object-none" layout="fill" />
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+      {/* Section News Letter */}
+      <section className="mb-32">
+        <div className="relative mx-auto max-w-7xl px-4">
+          <div className="absolute bottom-0 -z-10 h-36 w-36 translate-y-1/2 rotate-90 transform lg:-right-20">
+            <DecorPlus1 className="decor-plus-style-1" />
+          </div>
+          <div className="relative w-full bg-white">
+            <div className="absolute top-0 right-0 z-30 h-16 w-16 translate-x-1/2 -translate-y-1/2 transform rounded-full bg-gradient-to-b from-accent-6/60 to-accent-6">
+              <span className="material-icons flex h-16 w-16 items-center justify-center text-white">near_me</span>
+            </div>
+            <div className="relative z-20 mb-8 overflow-hidden rounded-3xl rounded-tl-[120px] bg-accent-4/20 pt-20 pb-20">
+              <div className="absolute top-0 right-0 h-[290px] w-[284px] -translate-y-1/3 translate-x-1/4 rotate-[45deg] scale-x-[-1] transform">
+                <DecorEllipse1 className="stroke-accent-6/10 opacity-10" />
+              </div>
+              <div className="absolute -bottom-0 left-4 h-[397px] w-[389px] translate-y-1/3 transform">
+                <DecorEllipse1 className="stroke-accent-6/10 opacity-10" />
+              </div>
+              <div className="relative z-10">
+                <h6 className="mb-10 px-36 text-center text-3xl font-bold leading-normal text-gray-500">
+                  Subscribe to get information, latest news and other interesting offers about Cobham
+                </h6>
+                <form action="" className="flex justify-center space-x-5">
+                  <fieldset className="relative">
+                    <span className="material-icons absolute flex h-full w-16 items-center justify-center text-gray-500">
+                      mail_outline
+                    </span>
+                    <input
+                      type="text"
+                      placeholder="Your Email"
+                      className="w-96 appearance-none rounded-lg border-2 border-transparent bg-white py-4 pl-14 transition duration-300 focus:border-accent-6 focus:outline-none"
+                    />
+                  </fieldset>
+                  <button className="rounded-lg bg-gradient-to-b from-accent-2/90 to-accent-2 py-4 px-16 text-white">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
