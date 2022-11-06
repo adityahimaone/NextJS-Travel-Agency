@@ -21,4 +21,8 @@ svg.decor-plus-style-1 .decor-plus-style-1_svg__color-2 {
 }
 svg.decor-plus-style-1 .decor-plus-style-1_svg__gray {
   @apply fill-gray-200;
+}
+
+.bg-gradient-social {
+  background: conic-gradient(from 180deg at 50% 50%, #b8d2f1 0deg, #f289aa 60deg, #c68bf0 106.09deg, #d164da 153.75deg, #c963e8 221.25deg, #bfc2e8 258.75deg, #ffc999 288.75deg, #d0d8c9 315deg, #bad0f1 334.13deg, #ced8cb 358.97deg, rgba(255, 255, 255, 0) 360deg);
 }/*# sourceMappingURL=globals.css.map */
