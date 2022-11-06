@@ -27,9 +27,15 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>Travel Agency</title>
-        <meta name="description" content="Travel Agency APP" />
+        <meta name="description" content="travel app, booking app, life app, aplikasi jalan - jalan, dan sebagainya" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
+        {/* Meta Tag */}
+        <meta property='og:url' content='https://next-travel-agency.vercel.app/' />
+        <meta property='og:type' content='website' />
+        <meta property='og:title' content='Jadoo Travel Agency' />
+        <meta property='og:description' content='travel app, booking app, life app, aplikasi jalan - jalan, dan sebagainya' />
+        <meta property='og:image' content='https://next-travel-agency.vercel.app/jadoo-travel-agency.jpg' />
       </Head>
       {/* Header */}
       <div className="absolute z-10 w-full py-12">
