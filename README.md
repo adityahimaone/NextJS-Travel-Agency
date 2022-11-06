@@ -4,10 +4,21 @@ Slicing Travel Agency App with NextJS and TailwindCSS
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
 ## Resource
 
 <p>Source Learning : https://youtu.be/NXd16HxHLA4</p>
 <p>Source Figma : https://freebieflux.com/download-travel-agency-free-landing-page-freebie-by-ar-shakir.html</p>
+
+## Performance
+
+- GT Metrix
+![image](https://user-images.githubusercontent.com/30428194/200178208-a78eddd9-edc4-4da6-b92b-07ccb1ea68e5.png)
+
+
+- Page Speed
+![image](https://user-images.githubusercontent.com/30428194/200178174-9816f38f-18b3-447d-92e2-50083254205a.png)
+
 
 ## Getting Started
 
