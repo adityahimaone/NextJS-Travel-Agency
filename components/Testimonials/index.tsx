@@ -53,12 +53,14 @@ export default function Testimonials() {
 
   return (
     <div className="mb-28">
-      <div className="relative mx-auto max-w-7xl">
-        <div className="flex">
-          <div className="w-6/12 pl-8 pr-20">
+      <div className="relative mx-auto max-w-full px-4 lg:max-w-7xl">
+        <div className="flex flex-wrap">
+          <div className="w-full px-0 lg:w-5/12 lg:pl-8 lg:pr-20">
             <div className="mb-16 flex flex-col">
               <h3 className="mb-2 text-lg uppercase text-gray-500">Testimonials</h3>
-              <h3 className="mb-10 font-serif text-5xl leading-snug text-gray-900">What people say about Us.</h3>
+              <h3 className="mb-10 font-serif text-4xl leading-tight text-gray-900 lg:text-5xl lg:leading-snug">
+                What people say about Us.
+              </h3>
               <ul className="flex gap-x-6">
                 {Items.map((item, idx) => (
                   <li
@@ -73,8 +75,8 @@ export default function Testimonials() {
               </ul>
             </div>
           </div>
-          <div className="relative flex w-6/12 items-center justify-center">
-            <div className="absolute -inset-10 -top-20">
+          <div className="relative flex h-[320px] w-full items-center justify-center lg:h-auto lg:w-6/12">
+            <div className="absolute -inset-4 lg:-inset-10 lg:-top-20">
               <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCreative]}
                 spaceBetween={50}
@@ -94,10 +96,10 @@ export default function Testimonials() {
                   // @ts-ignore
                   swiperRef.current = swiper;
                 }}
-              >  
+              >
                 {Items.map((item) => (
                   <SwiperSlide key={item.id}>
-                    <div className="relative px-32 pt-20 pb-48">
+                    <div className="relative px-12 pt-10 pb-48 lg:px-32 lg:pt-20">
                       <div className="relative">
                         <div className="relative z-20 rounded-xl bg-white p-6 shadow-great">
                           <span className="absolute top-0 left-0 mr-3 h-12 w-12 flex-none -translate-x-1/2 -translate-y-1/2 transform overflow-hidden rounded-full">
@@ -121,7 +123,7 @@ export default function Testimonials() {
               </Swiper>
             </div>
           </div>
-          <div className="flex w-1/12 items-center justify-center">
+          <div className="hidden w-full items-center justify-center lg:flex lg:w-1/12">
             <div className="flex flex-col">
               <button
                 onClick={handleSlidePrev}
